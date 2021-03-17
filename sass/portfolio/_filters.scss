@@ -1,0 +1,57 @@
+.section-portfolio:first-child {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filters {
+  @extend .list;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters__item {
+  color: var(--primary-title-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.filters__button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  min-width: 73px;
+
+  background-color: var(--bcg-button-color);
+  color: var(--primary-title-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  box-shadow: none;
+  transition: color, box-shadow,
+    background-color var(--transition-duration-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--alt-logo-color);
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline: none;
+  }
+}
