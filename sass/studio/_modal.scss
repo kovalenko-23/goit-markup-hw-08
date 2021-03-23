@@ -1,18 +1,25 @@
 // MODAL
 .modal {
   position: absolute;
-  max-width: 100%;
   max-height: 100vh;
   left: 50%;
   top: 50%;
-  // overflow-y: scroll;
-
   background: #ffffff;
   border-radius: 4px;
   padding: 40px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: scale var(--transition-duration-cubic);
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    max-width: 100%;
+    width: 528px;
+  }
 }
 
 // FORM

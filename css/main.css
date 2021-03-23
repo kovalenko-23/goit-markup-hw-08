@@ -669,7 +669,6 @@ a,
 
 .modal {
   position: absolute;
-  max-width: 100%;
   max-height: 100vh;
   left: 50%;
   top: 50%;
@@ -680,6 +679,22 @@ a,
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: scale var(--transition-duration-cubic);
   transition: scale var(--transition-duration-cubic);
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    width: 528px;
+  }
 }
 
 .modal__form {
@@ -1703,7 +1718,7 @@ a,
   margin-bottom: 50px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .filters {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1778,6 +1793,12 @@ a,
   transition: box-shadow var(--transition-duration-cubic), -webkit-box-shadow var(--transition-duration-cubic);
 }
 
+@media (max-width: 480px) {
+  .projects__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: 768px) {
   .projects__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
@@ -1817,6 +1838,10 @@ a,
 .projects__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.projects__picture {
+  width: 100%;
 }
 
 .projects__description {

@@ -9,6 +9,12 @@
 }
 
 .projects__item {
+  &:not(:last-child) {
+    @media (max-width: 480px) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
@@ -47,6 +53,10 @@
   position: relative;
   // width: 370px;
   overflow: hidden;
+}
+
+.projects__picture {
+  width: 100%;
 }
 
 .projects__description {
