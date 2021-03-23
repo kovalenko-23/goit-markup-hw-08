@@ -1,14 +1,11 @@
 .navigation__list {
-  display: none;
-
-  @media (min-width: 481px) {
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-  }
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
+
 // appropriate use :not(:child)???
 .navigation__item + .navigation__item {
   margin-left: 50px;
@@ -56,6 +53,5 @@ a,
     width: 100%;
     background-color: var(--alt-logo-color);
     border-radius: 2px;
-    transform: translateY(1px);
   }
 }

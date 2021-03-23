@@ -1,8 +1,11 @@
 .projects {
   @extend .list;
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .projects__item {

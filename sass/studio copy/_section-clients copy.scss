@@ -1,13 +1,8 @@
-.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.clients .container {
+  padding-top: 98px;
+  padding-bottom: 92px;
   margin-left: auto;
   margin-right: auto;
-
-  @media (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .clients__title {
@@ -23,42 +18,16 @@
 
 .clients__list {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
-  @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-    padding: 0;
-  }
-
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-    padding: 0;
-  }
 }
 
-.clients__item {
-  flex-basis: calc((100% - 2 * 30px) / 2);
-  margin: 15px;
-
-  @media (min-width: 768px) {
-    flex-basis: calc((100% - 3 * 30px) / 3);
-    margin: 15px;
-  }
-
-  @media (min-width: 1200px) {
-    flex-basis: calc((100% - 6 * 30px) / 6);
-    margin: 15px;
-  }
+.clients__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .clients__link {
-  // width: 170px;
+  width: 170px;
   height: 90px;
   border: 1px var(--social-links-color-1) solid;
   border-radius: 4px;

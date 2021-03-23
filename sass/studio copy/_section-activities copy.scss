@@ -1,12 +1,5 @@
 .activities {
-  display: none;
-
-  @media (min-width: 1200px) {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 94px;
-  }
+  padding-bottom: 94px;
 }
 
 .activities__title {

@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+
+  &:focus,
+  &:hover {
+    color: #000;
+  }
+
+  &__web {
+    color: var(--alt-logo-color);
+  }
+
+  &--navigation {
+    color: #000;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.38;
+    letter-spacing: 0.03em;
+  }
+}

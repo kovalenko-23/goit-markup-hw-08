@@ -1,3 +1,18 @@
+.modal {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100vh;
+  left: 50%;
+  top: 50%;
+  overflow-y: auto;
+
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 40px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: scale var(--transition-duration-cubic);
+}
 // MODAL
 .modal {
   position: absolute;
@@ -5,7 +20,7 @@
   max-height: 100vh;
   left: 50%;
   top: 50%;
-  // overflow-y: scroll;
+  overflow-y: auto;
 
   background: #ffffff;
   border-radius: 4px;
@@ -17,21 +32,16 @@
 
 // FORM
 .modal__form {
-  margin-left: 15px;
-  margin-right: 15px;
-
-  @media (min-width: 768px) {
-    width: 448px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal__form-title {
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -116,10 +126,10 @@
 
 // CHECKBOX POLICY
 .modal__checkbox {
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   display: flex;
-
+  width: 425px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -130,11 +140,6 @@
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-
-  @media (min-width: 1200px) {
-    justify-content: space-between;
-    width: 425px;
-  }
 }
 
 .modal__checkbox input[type='checkbox'] {
@@ -144,21 +149,14 @@
 }
 
 .modal__checkbox-agreement {
-  margin-left: 8px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-
-  @media (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.71;
-    margin-left: 0;
-  }
 }
 
 .modal__checkbox-link {

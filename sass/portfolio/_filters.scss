@@ -6,8 +6,12 @@
 .filters {
   @extend .list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+
+  @media (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .filters__item {
