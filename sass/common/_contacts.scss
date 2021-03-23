@@ -4,11 +4,7 @@
   justify-content: flex-end;
   margin: 0;
   margin-left: 50px;
-  display: block;
-
-  @media (max-width: 480px) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: 768px) {
     display: block;

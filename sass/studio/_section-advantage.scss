@@ -9,7 +9,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     text-align: initial;
   }
 }
@@ -42,6 +42,11 @@
 
   @media (min-width: 768px) {
     margin: 15px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media (min-width: 1200px) {
+    margin: 15px;
     flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }
@@ -61,7 +66,6 @@
 }
 
 .advantages {
-  display: inline-block;
   padding-top: 60px;
   padding-bottom: 60px;
 

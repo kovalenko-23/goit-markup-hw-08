@@ -13,12 +13,18 @@
 .clients__title {
   color: var(--primary-title-color);
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.17;
+
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 
-  margin-bottom: 50px;
+  @media (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {

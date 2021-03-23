@@ -1,8 +1,12 @@
 .socials {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0;
   margin: 0;
+
+  @media (min-width: 1200px) {
+    justify-content: space-around;
+  }
 }
 
 .socials__item:not(:last-child) {

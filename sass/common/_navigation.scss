@@ -1,7 +1,7 @@
 .navigation__list {
   display: none;
 
-  @media (min-width: 481px) {
+  @media (min-width: 768px) {
     align-items: center;
     margin: 0;
     padding: 0;
@@ -56,6 +56,10 @@ a,
     width: 100%;
     background-color: var(--alt-logo-color);
     border-radius: 2px;
-    transform: translateY(1px);
+    transform: translateY(5px);
+
+    @media (min-width: 1200px) {
+      transform: translateY(2px);
+    }
   }
 }
