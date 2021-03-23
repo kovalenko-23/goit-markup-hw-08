@@ -1,7 +1,7 @@
 .projects {
   @extend .list;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -9,8 +9,16 @@
 }
 
 .projects__item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin: 15px;
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+
   box-shadow: none;
 
   transition: box-shadow var(--transition-duration-cubic);
