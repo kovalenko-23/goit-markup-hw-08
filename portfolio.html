@@ -299,24 +299,57 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu__close-button js-close-menu" type="button">
-            <svg class="menu__close-icon" width="11" height="11">
+            <svg class="menu__close-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-close_24px"></use>
             </svg>
         </button>
+    
         <ul class="menu__mobile">
-            <li class="menu__item">
-                <a href="./index.html" class="menu__link">Студия</a>
+            <li class="menu__mobile-item">
+                <a href="./index.html" class="menu__link menu__link">Студия</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__mobile-item">
                 <a href="./portfolio.html" class="menu__link menu__link--current">Портфолио</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__mobile-item">
                 <a href="#" class="menu__link">Контакты</a>
             </li>
         </ul>
+    
         <ul class="menu__contacts">
-            <li class="menu__contacts-item">+38 096 111 11 11</li>
-            <li class="menu__contacts-item">info@devstudio.com</li>
+            <li class="menu__contacts-item">
+                <a class="contacts__link-mobile" href="tel:+380961111111">
+                    +38 096 111 11 11
+                </a>
+            </li>
+            <li class="menu__contacts-item">
+                <a class="contacts__link-mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                </a>
+            </li>
+        </ul>
+    
+        <ul class="menu__socials">
+            <li class="menu__socials-item">
+                <a class="menu__socials-link" href="#">
+                    Instagram <span class="menu__socials-slash">|</span>
+                </a>
+            </li>
+            <li class="menu__socials-item">
+                <a class="menu__socials-link" href="#">
+                    Twitter <span class="menu__socials-slash">|</span>
+                </a>
+            </li>
+            <li class="menu__socials-item">
+                <a class="menu__socials-link" href="#">
+                    Facebook <span class="menu__socials-slash">|</span>
+                </a>
+            </li>
+            <li class="menu__socials-item">
+                <a class="menu__socials-link" href="#">
+                    Linkedin
+                </a>
+            </li>
         </ul>
     </div>
 </footer>
