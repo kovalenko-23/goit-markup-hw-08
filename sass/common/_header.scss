@@ -4,11 +4,12 @@
 
 .page-header {
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 16px 15px;
   display: flex;
+
+  @media (min-width: 1200px) {
+    padding: 24px 15px;
+  }
 }
 
 .navigation {

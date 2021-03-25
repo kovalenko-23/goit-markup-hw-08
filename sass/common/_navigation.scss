@@ -58,6 +58,10 @@ a,
     border-radius: 2px;
     transform: translateY(5px);
 
+    @media (min-width: 768px) {
+      transform: translateY(-2px);
+    }
+
     @media (min-width: 1200px) {
       transform: translateY(2px);
     }
