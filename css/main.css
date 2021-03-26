@@ -1981,6 +1981,10 @@ a,
   margin-top: 4px;
 }
 
+.menu-container {
+  max-width: 100%;
+}
+
 @media (max-width: 767px) {
   .menu-container {
     position: fixed;
@@ -2028,8 +2032,8 @@ a,
 
 .menu__close-button {
   position: absolute;
-  top: 10px;
-  left: 0;
+  top: 21px;
+  right: 15px;
   border: none;
   background-color: #fff;
 }
