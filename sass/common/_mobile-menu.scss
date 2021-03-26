@@ -43,6 +43,13 @@
   background-color: #fff;
 }
 
+.menu__close-icon {
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
+}
+
 .menu__mobile {
   margin: 0;
   padding: 0;
