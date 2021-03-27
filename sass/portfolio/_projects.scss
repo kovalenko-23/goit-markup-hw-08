@@ -1,17 +1,27 @@
 .projects {
   @extend .list;
 
+  @media (max-width: 767px) {
+    margin-top: 40px;
+  }
+
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    margin-top: -15px;
   }
 }
 
 .projects__item {
+  @media (max-width: 767px) {
+    display: block;
+  }
+
   display: flex;
+
   &:not(:last-child) {
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       margin-bottom: 30px;
     }
   }
@@ -39,6 +49,7 @@
 .projects__link {
   display: flex;
   flex-direction: column;
+
   &:focus .projects__description {
     transform: translateY(0);
   }
@@ -59,6 +70,8 @@
 
 .projects__picture {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .projects__description {

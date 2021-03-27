@@ -25,7 +25,7 @@
 }
 
 .team__list {
-  @media (max-width: 480px) {
+  @media (max-width: 479px) {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -33,14 +33,6 @@
   }
 
   @media (min-width: 768px) {
-    margin: -15px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: 1200px) {
     margin: -15px;
     padding: 0;
     list-style: none;
@@ -75,7 +67,6 @@
 .team__thumb {
   height: 460px;
   overflow: hidden;
-  border-radius: 4px;
 
   @media (min-width: 768px) {
     height: 374px;

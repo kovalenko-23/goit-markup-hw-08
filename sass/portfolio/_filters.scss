@@ -7,11 +7,16 @@
   @extend .list;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: -15px;
 
   @media (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 34px;
   }
 }
 
@@ -24,13 +29,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  margin-bottom: 15px;
 
-  &:first-child {
-    margin-bottom: 15px;
-  }
-
-  &:not(:last-child) {
-    margin-right: 8px;
+  &:not(:first-child) {
+    margin-left: 8px;
   }
 }
 
