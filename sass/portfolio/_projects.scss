@@ -9,6 +9,7 @@
 }
 
 .projects__item {
+  display: flex;
   &:not(:last-child) {
     @media (max-width: 480px) {
       margin-bottom: 30px;
@@ -36,6 +37,8 @@
 }
 
 .projects__link {
+  display: flex;
+  flex-direction: column;
   &:focus .projects__description {
     transform: translateY(0);
   }
@@ -51,7 +54,6 @@
 
 .projects__thumb {
   position: relative;
-  // width: 370px;
   overflow: hidden;
 }
 
@@ -82,6 +84,7 @@
 }
 
 .projects__content {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
