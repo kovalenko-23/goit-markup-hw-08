@@ -14,10 +14,12 @@
 }
 
 .footer__form-item {
-  display: inline-block;
-  width: 100%;
+  @media (max-width: 479px) {
+    display: block;
+  }
 
-  @media (min-width: 768px) {
+  @media (min-width: 480px) {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
