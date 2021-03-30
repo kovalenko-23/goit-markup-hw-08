@@ -1811,8 +1811,8 @@ a,
   margin-bottom: 15px;
 }
 
-.filters__item:not(:first-child) {
-  margin-left: 8px;
+.filters__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filters__button {
